@@ -28,6 +28,28 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  static_pages:
+    help:
+      application: "application"
+      git: "git"
+      help: "title help"
+    contact:
+      con: "This is the sample application for the contact."
+      contact: "Title contact"
+    about:
+      about:  "About"
+      the: "The"
+      is: "is a"
+      thisisd: " This is the sample application for the tutorial."
+      series:    "screencast series"
+      toeach: "to teach web development with "
+      ahert:          "Ruby on Rails Tutorial"
+      about1: "Title About"
+  layouts:
+    application:
+      title: "title||"
+      App: "Sample App"
+      full_name:  "This is the home page for the"
+      ahert: "Ruby on Rails Tutorial"
+      ahert1: "sample application."
