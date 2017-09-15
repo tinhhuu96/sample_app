@@ -1,5 +1,14 @@
-<p>
-  <%= t(".coment")  %>
-  <a href="http://www.railstutorial.org/"><%= t(".ahert")  %></a>
-  <%= t(".ahert1")  %>
-</p>
+<div class="center jumbotron">
+  <h1><%= t("static_pages.home.welcome")  %></h1>
+
+  <h2>
+    <%= t("static_pages.home.for")  %>
+    <a href="http://www.railstutorial.org/"><%= t("static_pages.home.ahert")  %></a>
+    <%= t("static_pages.home.application")  %>
+  </h2>
+
+  <%= link_to t("static_pages.home.sign"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            "http://rubyonrails.org/" %>
