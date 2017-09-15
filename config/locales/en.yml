@@ -30,6 +30,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 en:
   static_pages:
+    home:
+      welcome: "Welcome to the Sample App"
+      for: "This is the home page for the "
+      ahert: "Ruby on Rails Tutorial"
+      application: "sample application."
+      sign: "Sign up now!"
     help:
       application: "application"
       git: "git"
@@ -53,3 +59,21 @@ en:
       full_name:  "This is the home page for the"
       ahert: "Ruby on Rails Tutorial"
       ahert1: "sample application."
+    _footer:
+      the: "The"
+      ahert: "Ruby on Rails Tutorial"
+      by: "by"
+      MichaelHartl: "Michael Hartl"
+      About: "About"
+      contact: "Contact"
+      new: "New"
+    _header:
+      App: "Sample App"
+      home: "Home"
+      help: "Help"
+      log: "Log in"
+  users:
+    new:
+      title: "Sign up"
+      sign: "Sign up"
+      content: "This will be a signup page for new users."
