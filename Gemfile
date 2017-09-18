@@ -4,6 +4,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 gem "rails", "~> 5.1.4"
+gem "bcrypt", "3.1.11"
+gem "config"
 gem "bootstrap-sass", "3.3.7"
 gem "sqlite3"
 gem "puma", "~> 3.7"
@@ -17,7 +19,7 @@ group :development, :test do
   gem "capybara", "~> 2.13"
   gem "selenium-webdriver"
 end
-group :development do.
+group :development do
   gem "web-console", ">= 3.3.0"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "spring"
