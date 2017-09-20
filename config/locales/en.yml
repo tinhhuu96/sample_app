@@ -29,6 +29,8 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 en:
+  messeger: "Welcome to the Sample App"
+  errorss: "Sorry, user id does not exist"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
@@ -76,4 +78,8 @@ en:
     new:
       title: "Sign up"
       sign: "Sign up"
+      up : "Create my account"
       content: "This will be a signup page for new users."
+  shared:
+    _error_messages:
+      error: "The form contains"
