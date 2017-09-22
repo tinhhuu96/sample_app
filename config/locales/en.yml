@@ -31,6 +31,7 @@
 en:
   messeger: "Welcome to the Sample App"
   errorss: "Sorry, user id does not exist"
+  session_error: "Invalid email/password combination"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
@@ -74,6 +75,11 @@ en:
       home: "Home"
       help: "Help"
       log: "Log in"
+      users: "Users"
+      account: "Account"
+      logout: "Logout"
+      profile: "Profile"
+      setting: "Settings"
   users:
     new:
       title: "Sign up"
@@ -83,3 +89,8 @@ en:
   shared:
     _error_messages:
       error: "The form contains"
+  sessions:
+    new:
+      login: "Log in"
+      newuser: "New user?"
+      singupnow: "Sign up now!"
