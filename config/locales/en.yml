@@ -32,6 +32,10 @@ en:
   messeger: "Welcome to the Sample App"
   errorss: "Sorry, user id does not exist"
   session_error: "Invalid email/password combination"
+  update_profile: "Profile updated"
+  delete_use: "User deleted"
+  eror_destroy: "destroy error."
+  ple_login: "Please log in."
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
@@ -81,11 +85,21 @@ en:
       profile: "Profile"
       setting: "Settings"
   users:
+    index:
+      all: "All user"
+    _user:
+      edit: "edit"
+      delete: "delete"
+      you_sur: "You sure?"
     new:
       title: "Sign up"
       sign: "Sign up"
       up : "Create my account"
       content: "This will be a signup page for new users."
+    edit:
+      title: "Edit user"
+      up: "Save changes"
+      update: "Update your profile"
   shared:
     _error_messages:
       error: "The form contains"

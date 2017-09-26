@@ -7,3 +7,7 @@ user:
     minimum_length: 6
 sessions:
   check: 1
+gravatar:
+  size_option: 60
+per_page:
+  config: 4
