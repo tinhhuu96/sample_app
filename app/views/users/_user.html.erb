@@ -1,0 +1,9 @@
+<li>
+  <%= gravatar_for user %>
+  <%= link_to user.name, user %>
+  <% if current_user.admin? && !current_user?(user) %>
+    |<%= link_to t("users._user.delete"), user, method: :delete,
+      data: { confirm: t("users._user.you_sur") } %>
+    |<%= link_to t("users._user.edit"),  edit_user_path(user.id)%>
+  <% end %>
+</li>
