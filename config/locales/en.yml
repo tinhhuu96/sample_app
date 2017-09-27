@@ -36,6 +36,12 @@ en:
   delete_use: "User deleted"
   eror_destroy: "destroy error."
   ple_login: "Please log in."
+  account: "Account activated!"
+  account_not: "Account not activated!"
+  activation: "Invalid activation link"
+  check_mail: "Please check your email to activate your account"
+  for_check: "Check your email for the activation link."
+  account_ac: "Account activation"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
@@ -109,3 +115,12 @@ en:
       newuser: "New user?"
       singupnow: "Sign up now!"
       remember: "Remember me on this computer"
+  user_mailer:
+    account_activation:
+      App: "Sample App"
+      hi: "Hi"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+    password_reset:
+      reset: "User#password_reset"
+      find: ", find me in app/views/user_mailer/password_reset.html.erb"
