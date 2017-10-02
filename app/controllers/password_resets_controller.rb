@@ -23,7 +23,7 @@ class PasswordResetsController < ApplicationController
   def flase_validate
     if @user.update_attributes user_params
       log_in @user
-      @user.update_attributes :reset_digest, nil
+      @user.update_attributes reset_digest: nil
       flash[:success] = t "password_resets_3"
       redirect_to @user
     else
@@ -51,9 +51,7 @@ class PasswordResetsController < ApplicationController
   end
 
   def valid_user
-    unless  @user && @user.activated? && @user.authenticated?(:reset, params[:id])
-      redirect_to root_url
-    end
+    redirect_to root_url unless @user && @user.activated? && @user.authenticated?(:reset, params[:id])
   end
 
   def check_expiration

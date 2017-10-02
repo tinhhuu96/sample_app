@@ -11,7 +11,9 @@ class UsersController < ApplicationController
     redirect_to root_url
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate(page: params[:page])
+  end
 
   def index
     @users = User.sort_by_name.paginate(page: params[:page], per_page: Settings.pagination.page)

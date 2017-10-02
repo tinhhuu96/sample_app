@@ -7,10 +7,16 @@ user:
     minimum_length: 6
   time_reset: 2
 session:
-  value_checkbox: 1
+  value_checkbox: "1"
 gravatar:
   size: 80
   size_list: 50
 pagination:
   page: 5
+micropost:
+  max_length: 140
+  size: 5
+  size_gravata: 50
+shared:
+  micropost_form: "image/jpeg,image/gif,image/png"
 

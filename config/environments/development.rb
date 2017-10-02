@@ -27,19 +27,6 @@ Rails.application.configure do
   end
 
   # Don"t care if the mailer can"t send.
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.delivery_method = :smtp
-  host = "infinite-tor-69898.herokuapp.com"
-  config.action_mailer.default_url_options = { host: host }
-  ActionMailer::Base.smtp_settings = {
-    :address        => "smtp.sendgrid.net",
-    :port           => "587",
-    :authentication => :plain,
-    :user_name      => ENV["SENDGRID_USERNAME"],
-    :password       => ENV["SENDGRID_PASSWORD"],
-    :domain         => "heroku.com",
-    :enable_starttls_auto => true
-  }
 
   config.action_mailer.perform_caching = false
 
@@ -59,10 +46,11 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :test
+  host = "localhost:3000"
+  config.action_mailer.default_url_options = { host: host}
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-
-
 end

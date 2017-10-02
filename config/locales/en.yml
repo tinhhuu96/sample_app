@@ -46,6 +46,10 @@ en:
   password_resets_3: "Password has been reset."
   password_resets_4: "Password reset has expired."
   password_resets_er_1: "can't be empty"
+  vld_size_micopost: "should be less than 5MB"
+  micropost_created: "Micropost created!"
+  micropost_deleted: "Micropost deleted"
+  micropost_not_delete: "Micropost can not delete"
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
@@ -61,6 +65,8 @@ en:
       cnten1: "This is the home page for the"
       cnten2: "Ruby on Rails Tutorial"
       cnten3: "sample application."
+      rails_logo: "Rails logo"
+      h3: "Micropost Feed"
     about:
       title: "About"
       cnten1: "The"
@@ -102,6 +108,10 @@ en:
   shared:
     error_messages:
       ms1: "The form contains "
+    user_info:
+      cn1: "micropost"
+    micropost_form:
+      cn1: "Compose new micropost..."
   sessions:
     new:
       login: "Log in"
@@ -128,4 +138,7 @@ en:
     edit:
       title: "Reset password"
       submit: "Update password"
+  microposts:
+    micropost:
+      confirm: "You sure?"
 

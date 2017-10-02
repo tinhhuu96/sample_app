@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       validate_true user
     else
-      flash[:danger] = t "error_login"
+      flash.now[:danger] = t "error_login"
       render :new
     end
   end
